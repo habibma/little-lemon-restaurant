@@ -7,9 +7,10 @@ import { Footer } from './components/Footer';
 
 function App() {
   return (
-    <React.Fragment className="App">
-      <Header />
-      <Nav />
+    <React.Fragment className="App container">
+      <Header>
+        <Nav />
+      </Header>
       <Main />
       <Footer>
         <Nav />

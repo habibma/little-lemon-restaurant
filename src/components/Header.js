@@ -1,11 +1,17 @@
 import logo from '../Logo.svg'
+import hamberger from '../imgs/🦆 icon _hamburger-menu.svg'
+import basket from '../imgs/Basket.svg'
 
-export function Header() {
+export function Header({children}) {
 
     return(
         <header>
-            <h1>Hompage</h1>
-            <img src={logo} alt='Logo' />
+            <div className='header-row eight'>
+                <div className='hamburger'><a href='#'><img src={hamberger}/></a></div>
+                <a href='#'><img src={logo} alt='Logo' /></a>
+                {children}
+                <div className='basket'><img src={basket} /></div>
+            </div>
         </header>
     )
 }
