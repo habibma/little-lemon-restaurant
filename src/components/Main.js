@@ -61,7 +61,7 @@ export function Main() {
 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
                     </article>
                     <div>
-                        <div className='image'><img src={about1} alt='Little Lemon&#39;s chef' ></img>/></div>
+                        <div className='image'><img src={about1} alt='Little Lemon&#39;s chef' /></div>
                         <div className='image'><img src={about2} alt='Little Lemon&#39;s chef' /></div>
                     </div>
                 </section>
