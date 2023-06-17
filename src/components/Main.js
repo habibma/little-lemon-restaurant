@@ -1,9 +1,11 @@
+import React from 'react'
 import restaurantfood from '../imgs/restaurantfood.jpg'
-import greeksalad from '../imgs/greek-salad.jpg'
-import lemondessert from '../imgs/lemon-dessert.jpg'
-import bruchetta from '../imgs/bruchetta.svg'
 import about1 from '../imgs/mario-and-adrian-a.jpg'
 import about2 from '../imgs/restaurant-chef B.jpg'
+import { CallToAction } from './CallToAction'
+import { Chicago } from './Chicago'
+import { Specials } from './Specials'
+import { CustomersSay } from './CustomersSay'
 
 export function Main() {
 
@@ -12,10 +14,8 @@ export function Main() {
             <div className='container'>
                 <section className='slider slider-row eight'>
                     <article>
-                        <h1>Little Lemon</h1>
-                        <h2>Chicago</h2>
-                        <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-                        <button>Reserve a Table</button>
+                        <Chicago></Chicago>
+                        <CallToAction>Reserve a Table</CallToAction>
                     </article>
                     <img src={ restaurantfood } alt="restaurant food" />
                 </section>
@@ -23,33 +23,15 @@ export function Main() {
             <div className='container'>
                 <section className='sideber-2 eight'>
                     <h2>This Week Specials!</h2>
-                    <button>Online Menu</button>
+                    <CallToAction>Online Menu</CallToAction>
                 </section>
                 <section className='promption eight'>
-                    <article>
-                        <img src={greeksalad} />
-                        <h3>Greek Salad</h3>
-                        <p>The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. </p>
-                        <a href='#'>Order a Delivery</a>
-                    </article>
-                    <article>
-                        <img src={bruchetta} />
-                        <h3>Bruchetta</h3>
-
-                        <p>Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. </p>
-                        <a href='#'>Order a Delivery</a>
-                    </article>
-                    <article>
-                        <img src={lemondessert} />
-                        <h3>Lemon Dessert</h3>
-                        <p>This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.</p>
-                        <a href='#'>Order a Delivery</a>
-                    </article>
+                    <Specials />
                 </section>
             </div>
             <div className='container'>
                 <section className='testimonial eight'>
-                    Testimonials
+                   <CustomersSay />
                 </section>
             </div>
             <div className='container'>

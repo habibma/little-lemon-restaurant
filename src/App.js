@@ -1,20 +1,22 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import { Header } from './components/Header';
-import { Nav } from './components/Nav';
-import { Main } from './components/Main';
-import { Footer } from './components/Footer';
+import { Chicago } from './components/Chicago';
+import { Specials } from './components/Specials';
+import { BookingPage } from './components/BookingPage';
+import HomePage from './components/HomePage';
 
 function App() {
   return (
-    <React.Fragment className="App container">
-      <Header>
-        <Nav />
-      </Header>
-      <Main />
-      <Footer>
-        <Nav />
-      </Footer>
+    <React.Fragment className="App">
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<Chicago />} />
+        <Route path="/menu" element={<Specials />} />
+        <Route path="/reservation" element={<BookingPage />} />
+        <Route path="/order" element={<BookingPage />} />
+        <Route path="/login" element={<BookingPage />} />
+      </Routes>
     </React.Fragment>
   );
 }

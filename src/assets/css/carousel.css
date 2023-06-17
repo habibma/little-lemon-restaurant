@@ -1,0 +1,67 @@
+.carousel {
+    overflow: hidden;
+    position: relative;
+}
+
+.inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+}
+
+.carousel-item {
+    display: inline-flex;
+    white-space: normal;
+    align-items: center;
+    height: 90%;
+    padding: 0 2.5em 1em;
+
+}
+
+
+.indicator {
+    display: flex;
+    justify-content: center;
+}
+
+.indicator > button {
+    margin: 5px;
+}
+
+.arrow-left {
+      padding: 10px;
+      background: transparent;
+      width: 50px;
+      position: absolute;
+      left: 0;
+      top: 35%
+
+    }
+
+    .arrow-right {
+        padding: 10px;
+        background: transparent;
+        width: 50px;
+        position: absolute;
+        right: 0;
+        top: 35%;
+    }
+
+    .bullet {
+        background: transparent;
+        width: 10px;
+        height: 20px;
+        border-radius: 50%;
+    }
+    .active-bullet {
+        color: #495E57;
+        border: none;
+    }
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .carousel-item {
+         margin-left: 25%;
+        margin-right: 25%;
+    }
+ }

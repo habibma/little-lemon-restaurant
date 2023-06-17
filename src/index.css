@@ -136,6 +136,21 @@ li {
   margin-bottom: 0.2em;
 }
 
+/* ==================
+Images
+==================== */
+.thumbnail {
+  width: 70px;
+  height: 70px;
+}
+
+/* ==================
+Container
+==================== */
+.container {
+  padding: 2em;
+}
+
 
 /* ==================
 Grid
@@ -189,15 +204,10 @@ header nav {
 /* ==================
 Navigation
 ==================== */
-header nav > ul > li {
+.nav-item {
   display: inline-block;
   margin: auto 1em 0 auto;
   padding: 5px;
-}
-
-nav > ul a {
-  /* background-color: aqua; */
-  text-decoration: none;
   color: #000;
   font-weight: 500;
 }
@@ -206,7 +216,6 @@ nav > ul a {
 /* ==================
 Main
 ==================== */
-
 .slider h2 {
   margin-top: 0;
 }
@@ -245,7 +254,7 @@ article img {
 
 .testimonial {
   height: 290px;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   background-color: #EDEFEE;
 }
@@ -279,14 +288,6 @@ article img {
 
 
 /* ==================
-Container
-==================== */
-.container {
-  padding: 2em 5em;
-}
-
-
-/* ==================
 Slider
 ==================== */
 main .container:first-child {
@@ -300,7 +301,7 @@ main h1 {
 }
 
 .slider img {
-  width: 330px;
+  width: 100%;
   height: 416px;
 }
 
@@ -316,8 +317,16 @@ footer section {
   margin-bottom: 2em;
 }
 
+footer .nav-item {
+  display: block;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .slider img {
+    width: 315px;
+    height: 416px;
+  }
 
 }
 
@@ -331,8 +340,6 @@ footer section {
     grid-template-columns: 1fr 1fr;
   }
   .slider img {
-    width: 330px;
-    height: 416px;
     border-radius: 16px;
     justify-self: end;
   }
@@ -401,10 +408,9 @@ footer section {
   }
 
   .slider img {
-    width: 330px;
-    height: 416px;
     border-radius: 16px;
     justify-self: end;
+    height: 416px;
   }
 
   .container {

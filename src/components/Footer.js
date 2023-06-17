@@ -1,3 +1,4 @@
+import React from 'react'
 import logo from '../Logo.svg'
 
 export function Footer(props) {
@@ -13,17 +14,17 @@ export function Footer(props) {
                 <section>
                 <h4>Contact</h4>
                 <ul>
-                    <li>Address</li>
-                    <li>Phone Number</li>
-                    <li>Email</li>
+                    <li key='address'>Address</li>
+                    <li key='phone-nauber'>Phone Number</li>
+                    <li key='email'>Email</li>
                 </ul>
                 </section>
                 <section>
                 <h4>Social Media</h4>
                 <ul>
-                    <li>Facebook</li>
-                    <li>Instagram</li>
-                    <li>Twitter</li>
+                    <li key='facbook'>Facebook</li>
+                    <li key='instagram'>Instagram</li>
+                    <li key='twitter'>Twitter</li>
                 </ul>
                 </section>
             </div>
