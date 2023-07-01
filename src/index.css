@@ -214,7 +214,7 @@ Navigation
 
 
 /* ==================
-Main
+Homepage
 ==================== */
 .slider h2 {
   margin-top: 0;
@@ -290,7 +290,7 @@ article img {
 /* ==================
 Slider
 ==================== */
-main .container:first-child {
+main div:first-child {
   background-color: #495E57;
   color: #fff;
 }

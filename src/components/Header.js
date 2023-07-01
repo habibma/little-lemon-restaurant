@@ -8,10 +8,10 @@ export function Header({children}) {
     return(
         <header>
             <div className='header-row eight'>
-                <div className='hamburger'><a href='#'><img src={hamberger}/></a></div>
+                <div className='hamburger'><a href='#'><img src={hamberger} alt=''/></a></div>
                 <a href='#'><img src={logo} alt='Logo' /></a>
                 {children}
-                <div className='basket'><img src={basket} alt='basket icon' /></div>
+                <div className='basket'><img src={basket} alt='' /></div>
             </div>
         </header>
     )

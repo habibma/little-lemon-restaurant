@@ -28,7 +28,7 @@ export function Specials() {
             {specials.map((special, index) => {
                    return (
                    <article key={index}>
-                       <img src={special.image} />
+                       <img src={special.image} alt={special.name}/>
                        <h3>{special.name}</h3>
                        <p>{special.descryption}</p>
                        <a href='#'>Order a Delivery</a>
