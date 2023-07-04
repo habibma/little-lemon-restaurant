@@ -8,7 +8,7 @@ import HomePage from './components/HomePage';
 
 function App() {
   return (
-    <React.Fragment className="App">
+    <React.Fragment>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<Chicago />} />

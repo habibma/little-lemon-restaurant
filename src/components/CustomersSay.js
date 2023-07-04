@@ -3,7 +3,6 @@ import "../assets/css/carousel.css"
 import prev from '../imgs/Antu_go-previous-view.svg';
 import next from '../imgs/Antu_arrow-right.svg'
 import {Avatar} from "./Avatar";
-//import { useSwipeable } from "react-swipeable";
 
 function Carousel({ children }) {
 
@@ -17,11 +16,6 @@ function Carousel({ children }) {
         }
         setCurrentIndex (n)
     }
-
-    // const handlers = useSwipeable({
-    //     onSwipedLeft: () => updateIndex(currntIndex - 1),
-    //     onSwipedRight: () => updateIndex(currntIndex + 1)
-    // });
 
     return (
         <div className="carousel">

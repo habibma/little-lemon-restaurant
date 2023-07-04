@@ -290,7 +290,7 @@ article img {
 /* ==================
 Slider
 ==================== */
-main div:first-child {
+main .container:first-child {
   background-color: #495E57;
   color: #fff;
 }
@@ -304,6 +304,7 @@ main h1 {
   width: 100%;
   height: 416px;
 }
+
 
 /* ==================
 Footer
@@ -321,6 +322,7 @@ footer .nav-item {
   display: block;
 }
 
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .slider img {
@@ -330,8 +332,10 @@ footer .nav-item {
 
 }
 
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
   .footer-row {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -373,8 +377,10 @@ footer .nav-item {
 
 }
 
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
   .header-row{
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -449,6 +455,7 @@ footer .nav-item {
   }
 
 }
+
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
