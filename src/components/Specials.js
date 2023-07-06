@@ -31,7 +31,7 @@ export function Specials() {
                        <img src={special.image} alt={special.name}/>
                        <h3>{special.name}</h3>
                        <p>{special.descryption}</p>
-                       <a href='#'>Order a Delivery</a>
+                       <a href='/'>Order a Delivery</a>
                    </article>
                    )
                    }

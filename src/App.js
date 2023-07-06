@@ -4,6 +4,7 @@ import './App.css';
 import { Chicago } from './components/Chicago';
 import { Specials } from './components/Specials';
 import { BookingPage } from './components/BookingPage';
+import { ConfirmedBooking } from './components/ConfirmedBooking'
 import HomePage from './components/HomePage';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/reservation" element={<BookingPage />} />
         <Route path="/order" element={<BookingPage />} />
         <Route path="/login" element={<BookingPage />} />
+        <Route path="/confirmation" element={<ConfirmedBooking />}></Route>
       </Routes>
     </React.Fragment>
   );

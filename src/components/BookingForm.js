@@ -21,6 +21,8 @@ export const BookingForm = props => {
         setTime("");
         setNumber("");
         setOccation("");
+        // props.value.submitForm();
+        alert("Booking has been submited") //a temorary onSubmit feedback
     }
 
     return (
