@@ -1,18 +1,18 @@
 @font-face {
   font-family: karla-light;
-  src: url(../src/fonts/Karla-Light.ttf);
+  src: url(./fonts/Karla-Light.ttf);
 }
 @font-face {
   font-family: karla-extrabold;
-  src: url(../src/fonts/Karla-ExtraBold.ttf);
+  src: url(./fonts/Karla-ExtraBold.ttf);
 }
 @font-face {
   font-family: Karla-medium;
-  src: url(../src/fonts/Karla-Medium.ttf);
+  src: url(./fonts/Karla-Medium.ttf);
 }
 @font-face {
   font-family: Karla-bold;
-  src: url(../src/fonts/Karla-Bold.ttf);
+  src: url(./fonts/Karla-Bold.ttf);
 }
 
 /* ==================
@@ -154,6 +154,14 @@ Container
 
 
 /* ==================
+Flex
+==================== */
+.flex-container {
+  display: flex;
+}
+
+
+/* ==================
 Grid
 ==================== */
 .header-row, .footer-row {
@@ -166,6 +174,10 @@ Grid
   display: grid;
   grid-column: 3/ span 8;
 }
+
+.four {
+  grid-column: 5/ span 4;
+ }
 
 
 /* ==================
@@ -196,18 +208,17 @@ header > div {
   grid-template-columns: 1fr 2fr 1fr;
 }
 
-header nav {
-  display: none;
-  font-family: karla-extrabold;
-}
-
 
 /* ==================
 Navigation
 ==================== */
+nav {
+  display: none;
+  width: 100%;
+  font-family: karla-extrabold;
+}
+
 .nav-item {
-  display: inline-block;
-  margin: auto 1em 0 auto;
   padding: 5px;
   color: #000;
   font-weight: 500;
@@ -223,10 +234,6 @@ Homepage
 
 .sideber-2 {
   padding-top: 2em;
-}
-
-main .container:nth-child(2) {
-  grid-template-rows: 100px 1fr;
 }
 
 article img {
@@ -319,8 +326,10 @@ footer section {
   margin-bottom: 2em;
 }
 
-footer .nav-item {
-  display: block;
+footer nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 
@@ -396,7 +405,9 @@ footer .nav-item {
   }
 
   header nav {
-    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
   }
 
   .hamburger, .basket {
@@ -449,10 +460,6 @@ footer .nav-item {
     margin: 20px 0;
     height: 450px;
     gap: 15%;
-  }
-
-  footer {
-    height: 400px;
   }
 
 }

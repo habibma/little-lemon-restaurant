@@ -6,7 +6,7 @@ import bruchetta from '../imgs/bruchetta.svg'
 const specials = [
     {
         image: greeksalad,
-        name: 'Greec Salad',
+        name: 'Greek Salad',
         descryption: 'The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.'
     },
     {

@@ -5,6 +5,7 @@ import { BookingForm } from "./BookingForm"
 import { Header } from "./Header"
 import { Nav } from "./Nav"
 import { Main } from "./Main"
+import { Footer } from "./Footer"
 
 
 const updateTimes = (availableTimes, action) => {
@@ -48,11 +49,12 @@ export function BookingPage() {
                     </section>
                 </div>
                 <div className="container">
-                    <section className="eight">
+                    <section className="four">
                         <BookingForm value={{availableTimes, dispatch, init, submitForm}}/>
                     </section>
                 </div>
             </Main>
+            <Footer />
         </>
     )
 }
