@@ -25,7 +25,7 @@ function HomePage() {
                 <section className='slider slider-row eight'>
                     <article>
                         <Chicago></Chicago>
-                        <CallToAction>Reserve a Table</CallToAction>
+                        <CallToAction href="/reservation">Reserve a Table</CallToAction>
                     </article>
                     <img src={ restaurantfood } alt="restaurant food" />
                 </section>

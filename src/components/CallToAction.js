@@ -1,7 +1,8 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 export function CallToAction(props) {
     return (
-        <button onClick={props.href}>{props.children}</button>
+        <Link to={props.href}><button>{props.children}</button></Link>
     )
 }

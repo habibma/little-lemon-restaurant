@@ -34,7 +34,6 @@ export const ConfirmedBooking = () => {
                                         type="text"
                                         name="firstName"
                                         minLength={1} maxLength={25}
-                                        required
                                         autoFocus
                                         value={firstName}
                                         onChange={({target}) => setFirstName(target.value)}
@@ -47,7 +46,6 @@ export const ConfirmedBooking = () => {
                                         type="text"
                                         name="lastName"
                                         minLength={1} maxLength={25}
-                                        required
                                         value={lastName}
                                         onChange={({target}) => setLastName(target.value)}
                                     />
@@ -58,7 +56,7 @@ export const ConfirmedBooking = () => {
                                         id="email"
                                         type="email"
                                         name="email"
-                                        required
+                                        inputMode="email"
                                         value={email}
                                         onChange={({target}) => setEmail(target.value)}
                                     />

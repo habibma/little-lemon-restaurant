@@ -4,24 +4,28 @@
   }
 
 input, select, textarea {
-    /* width: 350px; */
     height: 35px;
     border-radius: 8px;
     font-family: Karla, sans-serif ;
     border: 1px solid #D9D9D9;
 }
 
-input, textarea {
-    padding: 1em;
+input, select {
+    padding-left: 1em;
 }
 
 textarea {
     height: initial;
     resize: none;
+    padding: 1em;
   }
 
 input:focus:invalid {
-    border: 2px solid red;
+    border: 1px solid red;
+}
+
+input:focus::placeholder {
+  color: transparent;
 }
 
 input[type=submit] {
@@ -44,7 +48,6 @@ label {
 fieldset {
     display: flex;
     padding: 16px;
-    /* border: 1px solid #ccc; */
     border-radius: 4px;
     flex-direction: column;
   }

@@ -63,10 +63,11 @@ export const BookingForm = props => {
                         placeholder="1"
                         min="1" max="10"
                         id="guests"
+                        inputMode="decimal"
                         value={number}
                         onChange={({target}) => setNumber(target.value)}
                     />
-                    {(number && number < 1 || number > 10) && <PossibleGuestNumbers />}
+                    {((number && number < 1) || number > 10) && <PossibleGuestNumbers />}
                 </div>
                 <div className="Field">
                     <label htmlFor="occasion">Occasion</label>

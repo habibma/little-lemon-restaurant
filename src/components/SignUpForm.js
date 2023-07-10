@@ -89,6 +89,7 @@ export function SignUpForm() {
                 Password <sup>*</sup>
               </label>
               <input
+                type="password"
                 value={password.value}
                 placeholder="Password"
                 onChange={handleChangePassword}
