@@ -1,10 +1,10 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { About } from './components/About';
-import { BookingPage } from './components/BookingPage';
+import { BookingPage } from './components/pages/BookingPage';
 import { ConfirmedBooking } from './components/ConfirmedBooking';
-import HomePage from './components/HomePage';
-import { SignUpPage } from './components/SignUpPage';
+import HomePage from './components/pages/HomePage';
+import { SignUpPage } from './components/pages/SignUpPage';
 
 function App() {
   return (

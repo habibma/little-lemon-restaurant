@@ -1,17 +1,17 @@
 import React from "react";
 
-import { Footer } from "./Footer";
-import { Header } from "./Header";
-import { Nav } from "./Nav";
-import { Main } from "./Main";
-import { Chicago } from './Chicago';
-import { Specials } from './Specials';
-import { CustomersSay } from './CustomersSay';
-import { CallToAction } from './CallToAction';
+import { Footer } from "../Footer";
+import { Header } from "../Header";
+import { Nav } from "../Nav";
+import { Main } from "../Main";
+import { Chicago } from '../Chicago';
+import { Specials } from '../Specials';
+import { CustomersSay } from '../CustomersSay';
+import { CallToAction } from '../CallToAction';
 
-import restaurantfood from '../imgs/restaurantfood.jpg';
-import about1 from '../imgs/mario-and-adrian-a.jpg';
-import about2 from '../imgs/restaurant-chef B.jpg';
+import restaurantfood from '../../imgs/restaurantfood.jpg';
+import about1 from '../../imgs/mario-and-adrian-a.jpg';
+import about2 from '../../imgs/restaurant-chef B.jpg';
 
 
 function HomePage() {

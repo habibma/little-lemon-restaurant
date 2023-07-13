@@ -22,8 +22,7 @@ export const ConfirmedBooking = () => {
                     <section className="eight">
                         <h1>The booking has been confirmed (temporary page)</h1>
                     </section>
-                </div>
-                <div className="container">
+                    <br />
                     <section className="four">
                         <form>
                             <fieldset>

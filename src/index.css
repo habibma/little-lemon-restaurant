@@ -142,6 +142,7 @@ li {
   margin-bottom: 0.2em;
 }
 
+
 /* ==================
 Images
 ==================== */
@@ -195,9 +196,10 @@ Grid
 
 
 /* ==================
-Button
+Button / Call to action
 ==================== */
 button {
+  font-weight: bold;
   width: 200px;
   height: 60px;
   background-color: #F4CE14;

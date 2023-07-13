@@ -1,11 +1,11 @@
 import React, { useReducer } from "react"
 import { useNavigate } from "react-router-dom"
 
-import { BookingForm } from "./BookingForm"
-import { Header } from "./Header"
-import { Nav } from "./Nav"
-import { Main } from "./Main"
-import { Footer } from "./Footer"
+import { BookingForm } from "../BookingForm"
+import { Header } from "../Header"
+import { Nav } from "../Nav"
+import { Main } from "../Main"
+import { Footer } from "../Footer"
 
 
 const updateTimes = (availableTimes, action) => {
@@ -46,9 +46,8 @@ export function BookingPage() {
                 <div className='container'>
                     <section className="eight">
                     <h1>Booking Page</h1>
+                    <br />
                     </section>
-                </div>
-                <div className="container">
                     <section className="four">
                         <BookingForm value={{availableTimes, dispatch, init, submitForm}}/>
                     </section>
