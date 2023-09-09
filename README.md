@@ -1,7 +1,9 @@
 **Project description**
+<hr>
 This website is the final project of the Meta course in the field of front-end development. This web application has been built with React components.
 
 **Project Objectives**
+<hr>
 The project’s goal was to create a web app for a given restaurant. These steps were taken:
 • Defining Persona and determining Customer Journet Map
 • Wireframing pages
