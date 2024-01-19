@@ -185,6 +185,8 @@ Grid
   text-align: center;
 }
 
+
+/* Responsive---->*/
 .eight {
   display: grid;
   grid-column: 3/ span 8;
@@ -193,6 +195,7 @@ Grid
 .four {
   grid-column: 5/ span 4;
  }
+ /* <----Responsive*/
 
 
 /* ==================

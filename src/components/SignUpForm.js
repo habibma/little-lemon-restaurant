@@ -8,7 +8,30 @@ import "../assets/css/form.css"
 
 export function SignUpForm() {
 
-  const [firstName, setFirstName] = useState("");
+  const [signUpData, setSignUpData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    role: "role"
+  });
+
+  const handleChange = ({target}) => {
+     const {value, name, type, checked} = target;
+    setSignUpData((prevState) => ({
+        ...prevState,
+        [name] : type === "checkbox" ? checked : value
+    }))
+  }
+
+  const [password, setPassword] = useState({
+    value: "",
+    isTouched: false,
+  });
+  const handleChangePassword = ({ target }) => {
+    setPassword({value: target.value, isTouched: true})
+    }
+
+  /* const [firstName, setFirstName] = useState("");
   const handleChangeFirstName = ({ target }) =>
     setFirstName(target.value);
 
@@ -20,31 +43,25 @@ export function SignUpForm() {
   const handleChangeEmail = ({ target }) =>
     setEmail(target.value);
 
-  const [password, setPassword] = useState({
-    value: "",
-    isTouched: false,
-  });
-  const handleChangePassword = ({ target }) => {
-    setPassword({value: target.value, isTouched: true})
-    }
+
+
   const [role, setRole] = useState("role");
   const handleChangeRole = ({ target }) =>
-    setRole(target.value);
+    setRole(target.value); */
 
   const getIsFormValid = () => {
-      return (firstName && email && validateEmail(email) && password.value.length >= 8 && role !== "role");
+      return (signUpData.firstName && signUpData.email && validateEmail(signUpData.email) && password.value.length >= 8 && signUpData.role !== "role");
     };
 
   const clearForm = () => {
-    setFirstName("");
-    setLastName('');
-    setEmail('');
-    setPassword({
-    value: "",
-    isTouched: false,
-    });
-    setRole("role");
-    };
+    setSignUpData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      role: "role"
+    })
+    setPassword("")
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -62,16 +79,18 @@ export function SignUpForm() {
               </label>
               <input
                 placeholder="First name"
-                value={firstName}
-                onChange={handleChangeFirstName}
+                value={signUpData.firstName}
+                onChange={handleChange}
+                name="firstName"
               />
             </div>
             <div className="Field">
               <label>Last name</label>
               <input
                 placeholder="Last name"
-                value={lastName}
-                onChange={handleCahngeLastName}
+                value={signUpData.lastName}
+                onChange={handleChange}
+                name="lastName"
               />
             </div>
             <div className="Field">
@@ -80,8 +99,9 @@ export function SignUpForm() {
               </label>
               <input
                 placeholder="Email address"
-                value={email}
-                onChange={handleChangeEmail}
+                value={signUpData.email}
+                onChange={handleChange}
+                name="email"
               />
             </div>
             <div className="Field">
@@ -93,6 +113,7 @@ export function SignUpForm() {
                 value={password.value}
                 placeholder="Password"
                 onChange={handleChangePassword}
+                name= "password"
               />
               {password.value.length < 8 && password.isTouched && <PasswordErrorMessage />}
             </div>
@@ -100,11 +121,12 @@ export function SignUpForm() {
               <label>
                 Role <sup>*</sup>
               </label>
-              <select value={role} onChange={handleChangeRole}>
+              <select value={signUpData.role} onChange={handleChange}>
                 <option value="role" disabled>Role</option>
                 <option value="individual">Individual</option>
                 <option value="business">Business</option>
               </select>
+              <input type="checkbox" id="signUp--checkbox" /><label htmlFor="signUp--checkbox">Subscribe to Newsletter</label>
             </div>
             <input value="Create account" type="submit" disabled={!getIsFormValid()} />
           </fieldset>

@@ -3,7 +3,7 @@ import { Header } from "./Header";
 import { Nav } from "./Nav";
 import { Main } from "./Main";
 
-import { validateEmail } from "./utils";
+// import { validateEmail } from "./utils";
 
 export const ConfirmedBooking = () => {
 
