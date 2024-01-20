@@ -13,7 +13,7 @@ export const SignUpPage = () => {
             <Main>
                 <div className="container">
                     <section className="eight">
-                        <h1>Sign up Page (temporary here)</h1>
+                        <h1>Sign up Page</h1>
                     </section>
                     <br />
                     <section className="four">

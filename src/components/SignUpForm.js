@@ -12,7 +12,8 @@ export function SignUpForm() {
     firstName: "",
     lastName: "",
     email: "",
-    role: "role"
+    role: "role",
+    isSubscribed: false,
   });
 
   const handleChange = ({target}) => {
@@ -31,24 +32,6 @@ export function SignUpForm() {
     setPassword({value: target.value, isTouched: true})
     }
 
-  /* const [firstName, setFirstName] = useState("");
-  const handleChangeFirstName = ({ target }) =>
-    setFirstName(target.value);
-
-  const [lastName, setLastName] = useState("");
-  const handleCahngeLastName = ({ target }) =>
-    setLastName(target.value);
-
-  const [email, setEmail] = useState("");
-  const handleChangeEmail = ({ target }) =>
-    setEmail(target.value);
-
-
-
-  const [role, setRole] = useState("role");
-  const handleChangeRole = ({ target }) =>
-    setRole(target.value); */
-
   const getIsFormValid = () => {
       return (signUpData.firstName && signUpData.email && validateEmail(signUpData.email) && password.value.length >= 8 && signUpData.role !== "role");
     };
@@ -60,7 +43,10 @@ export function SignUpForm() {
       email: "",
       role: "role"
     })
-    setPassword("")
+    setPassword({
+      value: "",
+      isTouched: false,
+    })
   };
 
   const handleSubmit = (e) => {
@@ -72,7 +58,7 @@ export function SignUpForm() {
   return (
         <form onSubmit={handleSubmit}>
           <fieldset>
-            <h2>Sign Up</h2>
+            {/* <h2>Sign Up</h2> */}
             <div className="Field">
               <label>
                 First name <sup>*</sup>
@@ -113,7 +99,6 @@ export function SignUpForm() {
                 value={password.value}
                 placeholder="Password"
                 onChange={handleChangePassword}
-                name= "password"
               />
               {password.value.length < 8 && password.isTouched && <PasswordErrorMessage />}
             </div>
@@ -121,12 +106,14 @@ export function SignUpForm() {
               <label>
                 Role <sup>*</sup>
               </label>
-              <select value={signUpData.role} onChange={handleChange}>
+              <select value={signUpData.role} onChange={handleChange} name="role">
                 <option value="role" disabled>Role</option>
                 <option value="individual">Individual</option>
                 <option value="business">Business</option>
               </select>
-              <input type="checkbox" id="signUp--checkbox" /><label htmlFor="signUp--checkbox">Subscribe to Newsletter</label>
+            </div>
+            <div className="signUp--checkbox">
+                <input type="checkbox" value={signUpData.isSubscribed} handleChange={handleChange}/><label htmlFor="signUp--checkbox">Subscribe to Newsletter</label>
             </div>
             <input value="Create account" type="submit" disabled={!getIsFormValid()} />
           </fieldset>

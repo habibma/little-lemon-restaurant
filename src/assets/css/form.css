@@ -11,7 +11,7 @@ input, select, textarea {
 }
 
 input, select {
-    padding-left: 1em;
+    text-indent: 1em;
 }
 
 textarea {
@@ -38,6 +38,19 @@ input[type=submit]:disabled {
 }
 input[type=submit]:enabled {
     background-color: #F4CE14;
+}
+
+input[type=checkbox] {
+  width: 15px;
+}
+
+.signUp--checkbox {
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+}
+.signUp--checkbox label {
+  margin-bottom: initial;
 }
 
 label {
