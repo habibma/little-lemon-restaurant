@@ -14,9 +14,6 @@ export const ConfirmedBooking = () => {
 
     return (
         <>
-            <Header>
-                <Nav />
-            </Header>
             <Main>
                 <div className="container">
                     <section className="eight">

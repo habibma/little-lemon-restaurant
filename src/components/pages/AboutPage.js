@@ -1,16 +1,12 @@
 import React from "react";
-import { Header } from "./Header";
-import { Nav } from "./Nav";
-import { Main } from "./Main";
-import { Chicago } from "./Chicago";
-import { Footer } from "./Footer";
+import { Header } from "../Header";
+import { Nav } from "../Nav";
+import { Main } from "../Main";
+import { Chicago } from "../Chicago";
 
 export const About = () => {
     return (
     <>
-        <Header>
-            <Nav />
-        </Header>
         <Main>
             <div className='container'>
                 <section className="eight">
@@ -23,7 +19,6 @@ export const About = () => {
                 </section>
             </div>
         </Main>
-        <Footer />
     </>
     )
 }

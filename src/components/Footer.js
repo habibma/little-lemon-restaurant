@@ -9,7 +9,7 @@ export function Footer(props) {
                 <section><img src={Logo} alt="logo"/></section>
                 <section>
                     <h4>Doormat Navigation</h4>
-                {props.children}
+                    {props.children}
                 </section>
                 <section>
                 <h4>Contact</h4>

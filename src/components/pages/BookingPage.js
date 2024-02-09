@@ -39,9 +39,6 @@ export function BookingPage() {
 
     return (
         <>
-            <Header>
-                <Nav />
-            </Header>
             <Main>
                 <div className='container'>
                     <section className="eight">
@@ -53,7 +50,6 @@ export function BookingPage() {
                     </section>
                 </div>
             </Main>
-            <Footer />
         </>
     )
 }

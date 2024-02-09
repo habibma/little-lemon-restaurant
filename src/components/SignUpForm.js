@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { validateEmail } from "./utils";
-
 import { PasswordErrorMessage } from "./Errors";
-
 import "../assets/css/form.css"
 
 
@@ -41,7 +39,8 @@ export function SignUpForm() {
       firstName: "",
       lastName: "",
       email: "",
-      role: "role"
+      role: "role",
+      isSubscribed: false
     })
     setPassword({
       value: "",
@@ -113,7 +112,7 @@ export function SignUpForm() {
               </select>
             </div>
             <div className="signUp--checkbox">
-                <input type="checkbox" value={signUpData.isSubscribed} handleChange={handleChange}/><label htmlFor="signUp--checkbox">Subscribe to Newsletter</label>
+                <input id="signUp--checkbox" type="checkbox" value={signUpData.isSubscribed} handleChange={handleChange}/><label htmlFor="signUp--checkbox">Subscribe to Newsletter</label>
             </div>
             <input value="Create account" type="submit" disabled={!getIsFormValid()} />
           </fieldset>

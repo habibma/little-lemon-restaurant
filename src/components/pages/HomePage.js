@@ -1,8 +1,5 @@
 import React from "react";
 
-import { Footer } from "../Footer";
-import { Header } from "../Header";
-import { Nav } from "../Nav";
 import { Main } from "../Main";
 import { Chicago } from '../Chicago';
 import { Specials } from '../Specials';
@@ -17,9 +14,6 @@ import about2 from '../../imgs/restaurant-chef.jpg';
 function HomePage() {
     return (
         <>
-        <Header>
-            <Nav />
-        </Header>
         <Main>
             <div className='container'>
                 <section className='slider slider-row eight'>
@@ -59,9 +53,6 @@ Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit 
                 </section>
             </div>
         </Main>
-        <Footer>
-            <Nav />
-        </Footer>
         </>
     )
 }
