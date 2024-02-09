@@ -1,12 +1,12 @@
 import React from 'react'
-import logo from '../imgs/logo.svg'
+import Logo from '../imgs/logo.svg'
 
 export function Footer(props) {
 
     return(
         <footer>
             <div className='footer-row eight'>
-                <section><img src={logo} alt="Logo"/></section>
+                <section><img src={Logo} alt="logo"/></section>
                 <section>
                     <h4>Doormat Navigation</h4>
                 {props.children}
