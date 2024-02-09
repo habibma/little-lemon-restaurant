@@ -11,7 +11,7 @@ import { CallToAction } from '../CallToAction';
 
 import restaurantfood from '../../imgs/restaurantfood.jpg';
 import about1 from '../../imgs/mario-and-adrian-a.jpg';
-import about2 from '../../imgs/restaurant-chef B.jpg';
+import about2 from '../../imgs/restaurant-chef.jpg';
 
 
 function HomePage() {

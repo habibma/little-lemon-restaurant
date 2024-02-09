@@ -1,8 +1,8 @@
 import React, {useState } from "react";
 import "../assets/css/carousel.css"
-import prev from '../imgs/Antu_go-previous-view.svg';
-import next from '../imgs/Antu_arrow-right.svg'
-import {Avatar} from "./Avatar";
+import prev from '../imgs/antu-go-previous-view.svg';
+import next from '../imgs/antu-arrow-right.svg'
+import { Avatar } from "./Avatar";
 
 function Carousel({ children }) {
 
