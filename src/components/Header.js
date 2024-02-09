@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from '../imgs/logo.svg'
 import Hamberger from '../imgs/icon-hamburger-menu.svg'
-import Basket from '../imgs/basket.svg'
+import Basket from '../imgs/basket-icon.svg'
 
 export function Header({children}) {
 
