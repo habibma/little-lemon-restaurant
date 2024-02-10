@@ -18,3 +18,5 @@ I used Git and GitHub during the project development. Git enables developers to 
 
 This project has been accepted as a successful final project in the course named: “<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/C97W7M5D4G8S" target="_blank">Meta Front-End Developer Professional Certificate</a>.”
 <hr>
+
+**The result is deployed on [Netlify](https://main--little-lemon-restaurant-mote.netlify.app/)**
