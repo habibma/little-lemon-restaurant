@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Header } from "./Header";
-import { Nav } from "./Nav";
+
 import { Main } from "./Main";
 
 // import { validateEmail } from "./utils";

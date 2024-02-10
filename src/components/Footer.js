@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../imgs/logo.svg'
+import ScrollToTop from './ScrollToTop'
 
 export function Footer(props) {
 
@@ -28,6 +29,7 @@ export function Footer(props) {
                 </ul>
                 </section>
             </div>
+            <ScrollToTop />
         </footer>
     )
 }

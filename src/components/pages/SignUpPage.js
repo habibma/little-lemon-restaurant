@@ -1,8 +1,6 @@
 import React from "react";
 import { SignUpForm } from "../SignUpForm";
-import { Header } from "../Header";
 import { Main } from "../Main";
-import { Nav } from "../Nav";
 
 export const SignUpPage = () => {
     return (

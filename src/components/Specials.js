@@ -30,17 +30,17 @@ export function Specials() {
     return (
         <>
             {specials.map((special, index) => {
-                   return (
-                   <article key={index}>
-                       <img src={special.image} alt={special.name}/>
-                       <div className='block-content'>
-                            <div className='flex-container space-btween'><h3>{special.name}</h3><p className='align-item-center'>{special.price}</p></div>
-                            <p>{special.descryption}</p>
-                            <div><a href='/'>Order a Delivery</a></div>
-                       </div>
-                   </article>
-                   )
-                   }
+                return (
+                <article key={index}>
+                    <img src={special.image} alt={special.name}/>
+                    <div className='block-content'>
+                         <div className='flex-container space-btween'><h3>{special.name}</h3><p className='align-item-center'>{special.price}</p></div>
+                         <p>{special.descryption}</p>
+                         <div><a href='/'>Order a Delivery</a></div>
+                    </div>
+                </article>
+                )
+                }
             )}
         </>
     )

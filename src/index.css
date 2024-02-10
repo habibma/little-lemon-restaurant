@@ -83,9 +83,7 @@ General Style
 }
 
 body {
-  font-family: karla-light, serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: karla-light, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -168,7 +166,7 @@ Flex
 }
 
 .space-btween {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .align-item-center {
@@ -341,6 +339,8 @@ Footer
 footer {
   background-color: #EDEFEE;
   padding: 2em;
+
+  position: relative;
 }
 
 footer section {
@@ -350,6 +350,17 @@ footer section {
 footer nav {
   display: flex;
   flex-direction: column;
+}
+
+.scroll-to-top {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+
+  position: -webkit-sticky; /* Safari */
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 
 
