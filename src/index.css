@@ -229,7 +229,7 @@ header > div {
 /* ==================
 Navigation
 ==================== */
-nav {
+header nav {
   display: none;
   width: 100%;
   font-family: karla-extrabold;
@@ -269,7 +269,7 @@ article img {
 .promption article {
   margin-bottom: 2em;
   padding-bottom: 1em;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   border-radius: 16px;
   -webkit-box-shadow: 0px 0px 15px -2px rgba(227,227,227,1);
   -moz-box-shadow: 0px 0px 15px -2px rgba(227,227,227,1);
